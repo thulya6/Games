@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Rock Paper Scissors</h1>
+      <div id="mode-selection">
+        <button id="single-player-button">Single Player</button>
+        <button
+          onclick="alert('player1: a -> rock , s -> paper , d-> scissors \n player2: 1 -> rock , 2 -> paper , 3 -> scissors')"
+          id="multi-player-button"
+        >
+          Multiplayer
+        </button>
+      </div>
+      <div id="target-score-container" style="display: none">
+        <label for="target-score">Set Target Score:</label>
+        <input type="number" id="target-score" min="1" />
+        <button id="start-game">Start Game</button>
+      </div>
+      <div id="game-area">
+        <div id="timer">Timer: 5</div>
+        <div id="scores">
+          <div>Player 1 Score: <span id="player1-score">0</span></div>
+          <div>Player 2/Computer Score: <span id="player2-score">0</span></div>
+        </div>
+        <div id="single-player-area">
+          <button onclick="makeChoice('rock')" class="choice-button">👊</button>
+          <button onclick="makeChoice('paper')" class="choice-button">
+            🖐️
+          </button>
+          <button onclick="makeChoice('scissors')" class="choice-button">
+            ✌️
+          </button>
+        </div>
+        <div id="multi-player-area">
+          <div id="player1-controls">
+            <button class="choice-button">👊</button>
+            <button class="choice-button">🖐️</button>
+            <button class="choice-button">✌️</button>
+          </div>
+          <div id="player2-controls">
+            <button class="choice-button">👊</button>
+            <button class="choice-button">🖐️</button>
+            <button class="choice-button">✌️</button>
+          </div>
+        </div>
+        <div id="result"></div>
+      </div>
+      <button id="reset-game" style="display: none">Reset Game</button>
+    </div>
+    <script src="rps.js"></script>
+  </body>
+</html>

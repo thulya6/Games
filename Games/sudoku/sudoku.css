@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+hr {
+  width: 500px;
+}
+#errors {
+  color: red;
+}
+button {
+  width: max-content;
+  font-size: 12px;
+  margin: 10px;
+}
+#board {
+  width: 450px;
+  height: 450px;
+  /* background-color: aqua;  */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#digits {
+  width: 450px;
+  height: 50px;
+  /* background-color: aqua; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tile {
+  width: 48px;
+  height: 48.1px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  width: 44px;
+  height: 44px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  /* flex-wrap: wrap; */
+}
+.number-selected {
+  background-color: gray;
+}
+.tile-start {
+  background-color: rgb(234, 230, 230);
+}
+.bordersrow {
+  border-bottom: 2px solid black;
+}
+.borderscol {
+  border-right: 2px solid black;
+}
+.dimmed {
+  background-color: lightgray;
+  color: darkgray;
+  pointer-events: none;
+}

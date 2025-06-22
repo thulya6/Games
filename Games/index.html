@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-selector-container">
+      <h1>Select Your Game</h1>
+      <button onclick="loadGame('rps')">Rock Paper Scissors</button>
+      <button onclick="loadGame('sudoku')">Sudoku</button>
+    </div>
+    <script>
+      function loadGame(game) {
+        if (game === "rps") {
+          window.location.href = "/rps/rps.html";
+        } else if (game === "sudoku") {
+          window.location.href = "/sudoku/sudoku.html";
+        }
+      }
+    </script>
+  </body>
+</html>
